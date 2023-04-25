@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 .header-link {
-  @apply text-gray-500 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-rose-800 hover:border-rose-800;
+  @apply dark:text-slate-200 transition-all duration-500 text-gray-500 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-rose-800 hover:border-rose-800;
 }
 
 .header-button {
-  @apply py-1 px-2 border-2 rounded-full border-rose-600 text-rose-600 hover:text-white hover:bg-rose-800 focus:outline-none focus:ring focus:ring-rose-900;
+  @apply transition-all duration-500 py-1 px-2 border-2 rounded-full border-rose-600 text-rose-600 hover:text-white hover:bg-rose-800 focus:outline-none focus:ring focus:ring-rose-900;
 }
 
 @layer components {
   .pagination-button {
-    @apply inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700;
+    @apply transition-all duration-500 inline-block py-1 px-3 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700;
   }
 }
 
 .footer-link {
-  @apply inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2;
+  @apply dark:text-slate-400 transition-all duration-500 inline-block text-gray-500 py-2 hover:underline decoration-gray-700 underline-offset-2;
+}
+
+.news-item {
+  @apply dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white hover:border-gray-200 transition-all duration-500;
 }
